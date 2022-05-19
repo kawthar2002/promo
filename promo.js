@@ -5,12 +5,17 @@ button.forEach((button) => {
         userName = prompt("Ты кто?", '');
 
         if (userName === 'Саша') {
+        meal = prompt ('Что ты сегодня ел?');
+        if (meal === 'Пельмени') {
+            alert('Я знала!');
+        } else {
+            alert('Опа! Неожиданно!');
+        }
+        weight = prompt('Твой вес', '');
 
-        pass = prompt('Твой вес', '');
-
-        if (pass < '86') {
+        if (weight < '86') {
             alert( 'Ты похудел!' );
-        } else if (pass > '87' ) {
+        } else if (weight > '87' ) {
             alert( 'Это все пельмени!' );
         } else {
             alert( 'Отличный вес!' );
